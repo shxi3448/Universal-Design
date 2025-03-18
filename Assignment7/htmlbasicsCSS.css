@@ -1,0 +1,44 @@
+h1, h2 {
+    color: purple;
+  }
+  
+  p {
+    color: gray;
+  }
+      
+  ul {
+    border: 2px solid orange;
+  }
+  
+  ol {
+    border: 2px solid purple;
+  }
+  
+  ol, ul {
+    padding: 5px 20px;
+    border-radius: 4px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  dl {
+    color: gray;
+    margin: 0.5em 0;
+  }
+  
+  dt {
+    font-weight: bold;
+    color: red;
+  }
+  
+  strong {
+    color: blue;
+  }
+  
+  em {
+    color: green;
+  }
+      
