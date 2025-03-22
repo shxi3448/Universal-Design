@@ -66,8 +66,11 @@ body > * {
 }
 
 main, header, nav, article, aside, footer, section {
+  /* margin: 0; */
   background-color: rgba(0,255,0,0.5);
   padding: 1%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -85,6 +88,7 @@ nav {
   height: 50px;
   flex: 100%;
   display: flex;
+  justify-content: center;;
 }
 
 nav ul {
@@ -128,6 +132,7 @@ aside {
   margin-left: 10px;
   padding: 1%;
   text-align: center;
+  box-sizing: border-box;
 }
 
 aside a {
@@ -142,21 +147,27 @@ aside img {
 }
 
 footer {
+  width: 100%; 
+  flex: 0 0 100%;
   margin-top: 10px;
-  width: 100%;
+  padding: 1%;
+  box-sizing: border-box;
 }
 
 /* HK additions */
 
 main {
   flex: 3;
+  box-sizing: border-box;
 }
 
 .flex-container {
-  background-color: rgba(0, 255, 0, 0.5); padding: 1%;
+  background-color: rgba(0, 255, 0, 0.5);
   padding: 1%;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  align-items: stretch;
+  box-sizing: border-box;
 }
 
