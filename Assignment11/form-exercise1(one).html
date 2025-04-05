@@ -23,55 +23,65 @@
 
 
  <h1>2020 Proposal Form</h1>
+ <p>Please fill out all required fields marked below. Fields marked with an asterisk (*) are required.</p>
+
 <fieldset>
-<legend>Speaker Info</legend>
+<legend><Strong>Speaker Info</Strong></legend>
  <ul>
 	<li>
-        <span>First Name:</span>
-        <input id="fstspkr1" name="fstspkr1" type="text" class="reqfield" />
+        <label for="fstspkr1">First Name: <span aria-hidden="true">*</span></label>
+        <input id="fstspkr1" name="fstspkr1" type="text" class="reqfield" autocomplete="given-name" required aria-required="true" />
     </li>
 
+    <li>
+        <label for="lstname1">Last Name: <span aria-hidden="true">*</span></label>
+        <input id="lstname1" name="lstname1" type="text" class="reqfield" autocomplete="family-name" required aria-required="true" />
+    </li>
 
- 	<li><span>Last Name:</span>
-        <input id="lstname1" name="lstname1" type="text" class="reqfield"  />
-</li>
-<li>
-	<span>Title:</span>
-	<input id="spkrtitle1" name="spkrtitle1" type="text" maxlength="48" />
-</li>
-<li>
-	<span>Company:</span>
-	<input id="company1" name="company1" type="text" />
-</li>
-<li>
-	<span>Department:</span>
-	<input id="department1" name="department1" type="text"  />
-</li>
-<li>
-	<span>Address:</span>
-	<input id="address1" class="reqfield" name="address1" type="text" />
-</li>
+    <li>
+	    <label for="spkrtitle1">Title:</label>
+        <input id="spkrtitle1" name="spkrtitle1" type="text" autocomplete="honorific-prefix" />
+    </li>
+
+    <li>
+	    <label for="company1">Company:</label>
+        <input id="company1" name="company1" type="text" autocomplete="organization" />
+    </li>
+
+    <li>
+	    <label for="department1">Department:</label>
+        <input id="department1" name="department1" type="text" />
+    </li>
+
+    <li>
+        <label for="address1">Address: <span aria-hidden="true">*</span></label>
+        <input id="address1" class="reqfield" name="address1" type="text" autocomplete="street-address" required aria-required="true" />
+    </li>
 </ul>
+</fieldset>
 
 </div> <!-- end of formcol1 div -->
     <div id="multchoice">
-    
-        <fieldset>
-            <legend>Type of Presentation</legend>
-    
-        <p><span>Lecture:</span>	<span><input value="1" id="TypeofPres_lec" name="p-type" type="radio" /> 
-        </span>
-           <span>Computer Lab:</span>	<span>
-           <input value="2" id="TypeofPres_lab" name="p-type" type="radio"  /></span></p>
-        
-        </fieldset>
-        
- 	<p class="submit-button">    
-<input type="submit" value="Submit your proposal" /></p>
-    </div> <!-- end of multchoice div -->
+    <fieldset>
+      <legend><Strong>Type of Presentation</Strong></legend>
+      <div class="radio-options">
+        <input value="1" id="TypeofPres_lec" name="p-type" type="radio" />
+        <label for="TypeofPres_lec">Lecture</label>
+  
+        <input value="2" id="TypeofPres_lab" name="p-type" type="radio" />
+        <label for="TypeofPres_lab">Lab</label>
+      </div>
+    </div>
+    </fieldset>
+  
+    <p class="submit-button">
+      <input type="submit" value="Submit your proposal" />
+    </p>
+</div> <!-- end of multchoice div -->
+
 
 </form>
-</fieldset>
+
 
 	
 </div> <!-- end wrapper div -->

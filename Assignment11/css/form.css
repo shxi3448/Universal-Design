@@ -14,7 +14,48 @@ div#formcol1 {
 	width: 100%;
 }
 
+label {
+	margin-right: .3em;
+	width: 6.3em; /* I made this deliberately wide – come up with your own optimal width */
+	display: inline-block; /* width will not work for “inline” elements such as label”. Therefore we need to set it to “inline-block” */
+	text-align: right;
+}
 
+#formcol1 li {
+	list-style:none;
+}
+
+/* .radio-options {
+	text-align: center;
+	padding-top: 0.5em;
+}
+  
+.radio-options input,
+.radio-options label {
+	display: inline-block;
+  } */
+
+  .radio-options {
+	display: flex;
+	justify-content: center; /* centers the radio buttons horizontally */
+	padding: 0.1em 0;
+	transform: translateX(7%);
+  }
+
+  .radio-options label {
+	text-align: initial;
+	display: flex;
+	align-items: center;
+	margin: 0 0.5em;
+  }
+
+  select:focus, select:active, input:focus, input:active, input:focus + label,
+  input:active + label, label[for]:focus, label[for]:active {
+  color: #FFF !important;
+  background-color: #BB3D2F !important;}
+
+  #formcol1 input.reqfield {
+	background:#FF9;
+	}
 
 /* end of form css */
-	
